@@ -14,7 +14,7 @@ def load_file_id():
     except Exception:
         return None
 
-@app.route("/download")
+@app.route("/")
 def download_file():
     file_id = load_file_id()
     if not file_id:
